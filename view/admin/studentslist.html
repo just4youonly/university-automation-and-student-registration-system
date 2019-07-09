@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+  <head>
+    <link rel="stylesheet" href="css/css.css">
+  </head>
+
+  <style type="text/css">
+   body{
+       font-family: Arial, Helvetica, sans-serif;user-select: none;
+        background-image: url("imgs/Grad.jpg");
+        height: 100%; 
+        background-position: right 85px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .deleteeditbtn{
+      user-select:none;
+      background-color: #cceeff;
+      border-radius:10px 20px;
+      text-align: center;
+      color: #006699;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+    @media only screen and (min-width: 1900px) {
+      .deleteeditbtn{
+        padding-bottom: 12px;
+        padding-top: 7px;
+      }
+    }
+  </style>
+
+
+
+<body  >
+  <div  style="border: 2px solid ;user-select: none;">
+
+    <div class="imgcontainer">
+      <img class ="img" src="imgs/logo2.png" alt="logo" >
+    </div>
+
+    <div class="topnav">
+      <a  href="#Administrator">Home</a>
+      <a href="#Administrator">Teachers</a>
+      <a href="#faculties">Subjects</a>
+      <a style="background-color: #0066cc" href="#departments">Students</a>
+      <a style="margin-right: 20px" href="#Sign out" id="out">Sign out</a>
+      <a style="margin-right: 20px" id="username">adnan</a>
+    </div>
+
+  </div>
+
+  <div id ="topbtn">
+    <a id="addadministrator"  href="addadministrator.html"  style="float: left;">Add Student</a>.
+      <div class="search"  href="addadministrator.html"  style="float: right;">
+        <b style="float: left;margin-left: 10px;  margin-right: 5px;user-select: none;">Search :</b>
+        <input id="search" type="text" name="search" placeholder="Write to Search">
+      </div>
+  </div>
+
+  <div style="margin-top:100px ; height: 100%; margin-bottom: 80px;" class="tabblecontainer" style="overflow-x:auto;width: 900px;" >
+
+    <div class="tablecontainer" style="margin: 20px;">
+      <table> 
+        <h3 style="color:#006699 ;margin-bottom: 5px;margin-left:20px;user-select:none"> - Students List :</h3> 
+        <tr>
+          <th  id="delete_edit" style="background-color: #ff6666 ;color:white"> </td>
+          <th  id="delete_edit" style="background-color: #ff6666 ;color:white"> </td>
+          <th  style="background-color: #ff6666 ;color:white">ID</th>
+          <th  style="background-color: #ff6666 ;color:white">Fname</th>
+          <th  style="background-color: #ff6666 ;color:white">Lname</th>
+          <th  style="background-color: #ff6666 ;color:white">Password</th>
+          <th  style="background-color: #ff6666 ;color:white ;width: 20%;">Email</td>
+          <th  style="background-color: #ff6666 ;color:white">Identity</th>
+          <th  style="background-color: #ff6666 ;color:white ;width: 20%;">Tel</td>
+          <th  style="background-color: #ff6666 ;color:white ;width: 20%;">Birh Date</th>
+          <th  style="background-color: #ff6666 ;color:white ;width: 20%;" >Address</th>
+          <th  style="background-color: #ff6666 ;color:white ;width: 20%;">Faculty </th>
+          <th  style="background-color: #ff6666 ;color:white ;width: 20%;" >Department </th>
+        </tr>
+
+        <tr >
+          <td id="delete_edit" ><a class="deleteeditbtn" >delete</a></td>
+          <td id="delete_edit" ><a class="deleteeditbtn" >edit</a></td>
+          <td >1</td>
+          <td >adnanadnan</td>
+          <td >mehratmehrat</td>
+          <td >adnan001adnan001</td>
+          <td >adnan mehrat@gmail.com</td>
+          <td >99308012204</td>
+          <td >05368329568</td>
+          <td >1994-5-4</td>
+          <td >samsun</td>
+          <td >adnan001adnan001</td>
+          <td >adnan001adnan001</td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>

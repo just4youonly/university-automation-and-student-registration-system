@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <head>
+  
+
+
+  </head>
+  <style >
+    @keyframes myChangee {
+      from {
+          height: 0px;
+      } to {
+          height:850px;
+      }
+    }
+
+    
+
+
+
+
+     .con{
+      margin-top: 50px;
+      margin-left: 15%;
+      text-align: left;
+      top: 50px;
+      width: 70%;
+      height:100%;
+      background: white;
+      border: 0.5px solid #006699 ;
+      border-radius: 50px 20px;
+      box-shadow: 5px 5px #006699;
+      animation: 3s myChange;
+    }
+   
+   
+
+    button{
+      background:#006699;
+      border: 0.5px solid #006699 ;
+      border-radius:  20px;
+      color: white;
+      position: absolute;
+      top: 100px;
+      left: 225px;
+      text-align: center;
+       width: 30px;
+      height: 30px;
+    }
+    button:hover{
+        background-color: #ff6666;
+        color: white;
+    }
+    input{
+      width:100%;
+      margin: 10px;
+    }
+    label{
+      color: #006699;
+      font-weight: bold;
+    }
+
+    input.ng-pristine {
+        background-color:#f2f2f2;
+    }
+    input.ng-dirty {
+        background-color:white;
+        color: #006699 ;
+    }
+    input.ng-valid {
+        background-color:#cceeff;
+    }
+   
+    #form{
+       animation: 2s myChangee;
+    }
+    
+  
+
+   
+
+
+    br{}
+
+
+
+
+
+.topnav {
+ 
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #737373;
+  background-color:#6699ff;
+
+
+}
+
+.topnav a {
+  margin-top: 0px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+#out{
+    float: right;
+}
+
+
+.topnav a:hover {
+  background-color: #ff6666;
+  color: white;
+
+}
+
+
+.topnav #out:hover {
+  background-color:#ff6666;
+  color: white;
+}
+
+.img {
+    margin-top: 5px;
+    height: 50px;
+    width: 400px;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    overflow: hidden;
+    left: 150px;
+    width: 100%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  
+  .topnav a {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+
+  }
+
+  
+
+  #out{
+    float: left;
+  }
+}
+
+  </style>
+
+  
+
+  <body  style="margin: 0px" style="user-select: none;" >
+
+  <div class="hcon" style="border: 2px solid red;user-select: none;">
+    <div class="imgcontainer">
+       <img class ="img" src="logo2.png" alt="logo" >
+    </div>
+
+    <div class="topnav">
+        <a href="#addadministrator.html">Administrator</a>
+        <a href="#faculties">Faculties</a>
+        <a href="#departments">Departments</a>
+        <a href="#teachers">Teachers</a>
+        <a style="margin-right: 20px" href="#contact" id="out">Sign out</a>
+    </div>
+
+  </div>
+
+
+    
+
+    <div style="top: 200px ; height:850px; margin-bottom: 80px; " class="con" id="form"   >
+       <form method="post" action="/http" >  
+         <div style="margin: 25px;">
+            <h3 style="color:#006699 ;user-select:none">New student:</h3>
+            <label style="user-select:none">Fname:</label>
+            <input  name="fname" type="text"  placeholder="Fname" id="fname" required>
+          <br>
+            <label style="user-select:none">Lname:</label>
+             <input  name="lname" type="text"  placeholder="Lname" id="lname" required>
+           <br>
+             <label style="user-select:none">Email:</label>
+            <input  name="email"  type="email" placeholder="Email" id="email" required>
+           <br>
+            <label style="user-select:none">Password:</label>
+            <input  name="Password"  type="Password" placeholder="Password" id="Password" required>
+           <br>
+            <label style="user-select:none">Id:</label>
+            <input  name="tc"  type="text" placeholder="Id" id="tc" required>
+           <br>
+            <label style="user-select:none">Tel:</label>
+            <input  name="tel"  type="tel" placeholder="Tel" id="Tel" >
+           <br>
+            <label style="user-select:none">Birth date:</label>
+            <input name="birthday" type="date" placeholder="Birth date" id="birthday" >
+           <br>
+            <label style="user-select:none">Adress:</label>
+            <input  name="adress"  type="text" placeholder="Adress" id="adress" >
+           <br>
+           <label style="user-select:none">Fakulty:</label>
+            <input  name="text"  type="text" placeholder="Fakulty" id="fakulty" >
+           <br>
+           <label style="user-select:none">Department:</label>
+            <input  name="text"  type="text" placeholder="Department" id="department" >
+           <br>
+            <label style="user-select:none ;">Gender:</label><br>
+            <label style="user-select:none ;font-weight: normal;" >Male : </label>
+            <input style="width: 10px;" checked="checked" type="radio" name="gender" value="male" id="male" required><br>
+            <label style="user-select:none ;font-weight: normal;">Female:</label>
+            <input style="width: 10px;"  type="radio" name="gender" value="female" id="female" required ><br>
+           <br>
+           <br>
+          <button  type="submit" style="position: static;float: right;" >&#10004;</button>
+         </div>
+       </form>
+    </div>
+
+  
+  </body>
+</html>

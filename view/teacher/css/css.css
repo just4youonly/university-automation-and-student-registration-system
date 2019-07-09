@@ -1,0 +1,316 @@
+
+.tabblecontainer{
+  margin-top: 50px;
+  margin-left: 12%;
+  text-align: left;
+  top: 50px;
+  width: 80%;
+  background: white;
+  border: 0.5px solid #006699 ;
+  border-radius: 5px 5px;
+  box-shadow: 5px 5px #006699;
+  overflow-x:auto;
+  padding-bottom: 20px;
+}
+button{
+  background:#006699;
+  border: 0.5px solid #006699 ;
+  border-radius:  20px;
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 225px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+button:hover{
+  background-color: #ff6666;
+  color: white;
+}
+input{
+  width:100%;
+  margin: 10px;
+}
+label{
+  color: #006699;
+  font-weight: bold;
+}
+input.ng-pristine {
+  background-color:#f2f2f2;
+}
+input.ng-dirty {
+  background-color:white;
+color: #006699 ;
+}
+input.ng-valid {
+  background-color:#cceeff;
+}
+#form{
+  animation: 2s myChangee;
+}
+.topnav {
+  
+  overflow: hidden;
+  border: 1px solid #0000cc;
+  background-color:#6699ff;
+}
+.topnav a {
+  margin-top: 0px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+}
+#out , #username{
+  float: right;
+}
+.topnav a:hover {
+  background-color: #ff6666;
+  color: white;
+}
+.topnav #out:hover {
+background-color:#ff6666;
+color: white;
+}
+.topnav #username:hover {
+background-color:#6699ff;
+color: white;
+}
+.img {
+  margin-top: 5px;
+  height: 50px;
+  width: 390px;
+}
+.imgcontainer {
+  text-align: center;
+  overflow: hidden;
+  left: 150px;
+  width: 99%;
+  margin: 10px;
+  margin-left: -20px;
+}
+@media screen and (max-width: 850px) {
+  .topnav a {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  #out,#username{
+    float: left;
+  }
+}
+body{
+  background-image: url("imgs/Grad.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position: right 80px;
+  background-repeat: no-repeat;
+  margin: 0px;
+  user-select: none;
+}
+input.ng-pristine {
+  background-color:#f2f2f2;
+}
+input.ng-dirty {
+  background-color:white;
+  color: #006699 ;
+}
+input.ng-valid {
+  background-color:#cceeff;
+}
+table{
+  padding-top: 22px;
+}
+td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-color: #cceeff;
+  border-radius: 5px 20px;
+  height: 25px;
+  text-align: center;
+  user-select:none;
+  color: #006699;
+  
+}
+.thh{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-color: #cceeff;
+  border-radius: 5px 20px;
+  height: 25px;
+  text-align: center;
+  user-select:none;
+  width:60%;
+  color: #006699;
+}
+th{
+  border-radius: 5px 20px;
+  height: 25px;
+  text-align: center;
+  user-select:none;
+  color: #006699;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.deleteeditbtn{
+  user-select:none;
+  background-color: #cceeff;
+  border-radius:10px 20px;
+  text-align: center;
+  color: #006699;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 7px;
+}
+.deleteeditbtn:hover{
+  background-color: #6699ff;
+  color: white;
+}
+.deleteeditbtn:active {
+  background-color: #ff6666;
+  color: white;
+}
+#topbtn a {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+#topbtn  a {
+  transition: 0.3s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 20px;
+  display: block;
+  width:40%;
+  text-decoration: none;
+  font-size: 15px;
+  color:white;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #d9d9d9;  
+}
+#topbtn a:hover {
+  background-color:#ff6666;
+  color: white;
+}
+#addadministrator {
+  top: 150px;
+  left: 60px;
+  background-color:#6699ff;
+}
+.search{
+  position: static;
+  margin-top:9px;
+  transition: 0.3s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 20px;
+  display: block;
+  width:40%;
+  text-decoration: none;
+  font-size: 15px;
+  color:white;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #d9d9d9;
+  background-color: #6699ff; 
+}
+.search:hover {
+  background-color:#ff6666;
+  color: white;
+}
+#search{
+  position: absolute;
+  top: 145px;
+  width:250px;
+  border-radius: 2px 2px 2px 2px;
+  border: 0.2px solid #d9d9d9;
+}
+#delete_edit{
+  padding: 0px;
+}
+#homeadminlist {
+  margin-top: 125px;
+  margin-left: 14%;
+  margin-bottom: 100px;
+}
+#homeadminlist  a {
+  margin-left: 17%;
+  margin-top: 33px;
+  text-align: center;
+  width: 50%;
+  background-color:#6699ff;
+  transition: 0.3s;
+  padding-top: 25px;
+  padding-bottom: 17px;
+  height: 30px;
+  display: block;
+  width:49%;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #d9d9d9;  
+}
+ #homeadminlist a:hover {
+  padding-top: 30px;
+  margin-left: 15.7%;
+  width:52%;
+  height: 37px;
+  background-color:#ff6666;
+  color: white;
+}
+@media only screen and (max-width: 400px) {
+ #homeadminlist  a {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+  }
+  #homeadminlist {
+    margin-top: 125px;
+    margin-left: 0%;
+    margin-bottom: 100px;
+  }
+
+  #search{
+    width:120%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .search{
+    height: 40px;
+    width:40%;
+  }
+  #search{
+    position: static;
+    width:80%;
+    margin-top:5px;
+    margin-left: 10px;
+    font-size: 7px;
+  }
+}
+::-webkit-scrollbar {
+
+    height: 4px;
+    width: 3px;
+    margin-bottom: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff6666; 
+    border-radius: 200px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0000ff; 
+}
+
+::-webkit-scrollbar-track {
+}

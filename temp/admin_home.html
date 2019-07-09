@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  user-select: none;
+  
+}
+
+.topnav {
+ 
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #737373;
+  background-color:#6699ff;
+
+
+}
+
+.topnav a {
+  margin-top: 0px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+#out , #username{
+    float: right;
+}
+
+
+.topnav a:hover {
+  background-color: #ff6666;
+  color: white;
+
+}
+
+
+.topnav #out:hover {
+  background-color:#ff6666;
+  color: white;
+}
+.topnav #username:hover {
+  background-color:#6699ff;
+   color: white;
+}
+
+
+.img {
+    margin-top: 5px;
+    height: 50px;
+    width: 400px;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    overflow: hidden;
+    left: 150px;
+    width: 100%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  
+  .topnav a {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+
+  }
+
+  
+
+  #out,#username{
+    float: left;
+  }
+  
+}
+
+ #btn {
+    background-color: #ccc;
+ }
+
+
+ #btn a {
+    margin-top: 55px;
+    text-align: center;
+    width: 100%;
+  }
+
+
+ #btn  a {
+  transition: 0.3s;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  height: 50px;
+  display: block;
+  width:49%;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #d9d9d9;  
+}
+
+ #btn a:hover {
+  width:45.1%;
+  background-color:#ff6666;
+  color: white;
+}
+
+#add {
+  top: 150px;
+  left: 60px;
+  background-color:#6699ff;
+}
+
+#add1 {
+  top: 150px;
+  left: 385px;
+  background-color:#6699ff;
+}
+
+#add2 
+{
+  top: 150px;
+  left: 710px;
+  background-color:#6699ff;
+}
+
+#add3
+{
+  top: 150px;
+  left: 1035px;
+  background-color:#6699ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body style="">
+
+
+  <div class="hcon" style="border: 2px solid red;">
+    <div class="imgcontainer">
+       <img class ="img" src="logo2.png" alt="logo" >
+    </div>
+
+    <div class="topnav">
+        <a href="#addadministrator.html">Administrator</a>
+        <a href="#faculties">Faculties</a>
+        <a href="#departments">Departments</a>
+        <a href="#teachers">Teachers</a>
+        <a style="margin-right: 20px" href="#contact" id="out">Sign out</a>
+        <a style="margin-right: 20px" href="#contact" id="username">adnan</a>
+    </div>
+
+  </div>
+
+
+
+  <div id ="btn">
+    <a id="add"  href="addadministrator.html"  style="float: left;">Add Administrators</a>
+    <a id="add1" href="addfakulty.html"  style="float: right;">Add Faculties</a>
+    <a id="add2" href="adddepartment.html"  style="float: left;">Add Departments</a>
+    <a id="add3" href="addteacher.html"  style="float: right; margin-bottom: 70px;">Add Teachers</a>
+  </div>
+
+
+
+</body>
+</html>

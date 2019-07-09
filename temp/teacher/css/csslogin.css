@@ -1,0 +1,130 @@
+.loginform {
+  transition: 0.5s;
+  width: 100%;
+}
+.loginconti {
+  margin-top: 10%;
+  height: 400px;
+  width:100%;
+  height: 100%;
+  transition: 0.5s; 
+  margin-bottom: 12px;
+  margin-left: 2.5%;
+  min-width: 450px;
+}
+.loginconti input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.loginbtn {
+  background-color: #6699ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.loginbtn:hover {
+  opacity: 0.8;
+}
+.homeimgcon {
+  float: left;
+  margin-left: 6%;
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+.imgavatarlogo {
+  transition: 0.5s;
+  height: 200px;
+  width:250px;
+}
+.logincontainer {
+  float: left;
+  padding: 16px;
+  margin-left: 5%;
+  
+  width: 61%;
+  margin-right: 0px;
+  margin-bottom: 120px;
+}
+.loginconti span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.loginconti b{
+  color: #000033;
+}
+@media only screen and (max-width: 1100px) {
+
+  .homeimgcon {
+    width:20%;
+    margin-left: 35%;
+    margin-right: 45%;
+    margin-bottom: 15px;
+  }
+  .imgavatarlogo {
+    transition: 0.5s;
+    height: 100%;
+    width:100%;
+  }
+  .loginconti {
+    margin-top: 10%;
+    height: 400px;
+    width:100%;
+    height: 100%;
+    transition: 0.5s; 
+    margin-bottom: 12px;
+    margin-left: 5%;
+    margin-right: 50%;
+    min-width: 450px;
+  }
+  .logincontainer {
+    margin-right: 30%;
+    margin-left: 15%;
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .loginconti input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .logincontainer {
+    margin-left:10%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .homeimgcon {
+    width:20%;
+    margin-left: 15%;
+    margin-right: 45%;
+    margin-bottom: 15px;
+  }
+  .loginconti input[type=text], input[type=password] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .logincontainer {
+    margin-left:0%;
+  }
+  .loginbtn {
+    background-color: #6699ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 75%;
+  }
+}

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+  <head>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css1.css">
+  </head>
+
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;user-select: none;
+      background-image: url("imgs/Grad1.jpg");
+      height: 100%; 
+      background-position: right 85px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .thhh{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 12px;
+      padding-left: 12px;
+      background-color: #cceeff;
+      border-radius: 5px 20px;
+      height: 25px;
+      text-align: center;
+      user-select:none;
+      width:35%;
+      color: #006699;
+    }
+    @media only screen and (max-width: 900px) {
+      .search{
+        height: 40px;
+        width:40%;
+      }
+      #search{
+        position: static;
+        width:80%;
+        top: 30px;
+        margin-top:5px;
+        margin-left: 10px;
+        font-size: 9px;
+        padding: 5px;
+      }
+    }
+  
+  </style>
+
+<body  >
+  <div  style="border: 2px solid ;user-select: none;">
+
+    <div class="imgcontainer">
+      <img class ="img" src="imgs/logo2.png" alt="logo" >
+    </div>
+
+    <div class="topnav">
+      <a href="#Administrator">Home</a>
+      <a href="#Administrator" >My subject</a>
+      <a href="#faculties" style="background-color: #0066cc;">My students</a>
+      <a style="margin-right: 20px" href="#contact" id="out">Sign out</a>
+      <a style="margin-right: 20px" href="#contact" id="username">adnan</a>
+    </div>
+
+  </div>
+
+  <div id ="topbtn">
+      <div class="search"  href="addadministrator.html"  style="float: right;">
+        <b style="float: left;margin-left: 10px;  margin-right: 5px;user-select: none;">Search :</b>
+        <input id="search" type="text" name="search" placeholder="Write to Search">
+      </div>
+  </div>
+
+  <div style="margin-top:100px ; height: 100%; margin-bottom: 80px; " class="tabblecontainer"  style="overflow-x:auto;width: 900px;" >
+
+    <div class="tablecontainer" style="margin: 20px;">
+      <table> 
+        <h3 style="color:#006699 ;margin-bottom: 5px;margin-left:20px;user-select:none"> - My students</h3> 
+    
+        <tr>
+          <th  style="background-color: #ff6666 ;color:white"> </td>
+          <th class="thhh" style="background-color: #ff6666 ;color:white">Student ID</th>
+          <th class="thhh" style="background-color: #ff6666 ;color:white">Student Name</th>
+          <th class="thhh" style="background-color: #ff6666 ;color:white">Student Email</th>
+          <th  style="background-color: #ff6666 ;color:white" > </th>
+        </tr>
+
+        <tr >
+          <td >1</td>
+          <td >14060880</td>
+          <td class="examtd" >Adnan mehrat</td>
+          <td >adnan.mehrat@gmail.com</td>
+          <td class="examtd" >details</td>
+        </tr>
+
+         <tr >
+          <td >2</td>
+          <td >14060879</td>
+          <td class="examtd">Omar taha</td>
+          <td >omartaha@gmail.com</td>
+          <td class="examtd" >details</td>
+        </tr>
+        
+       
+
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>
